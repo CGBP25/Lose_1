@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Henry & Margarita’s 25th Anniversary</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #f6f6f6;
+      font-family: Arial, sans-serif;
+    }
+    .card {
+      position: relative;
+      width: 500px;   /* adjust to match your logo */
+      height: 500px;  /* adjust to match your logo */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      background: url('Annivlogo.jpg') no-repeat center center;
+      background-size: cover;
+    }
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(255, 255, 255, 0.4); /* lighter overlay */
+    }
+    .card .content {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+    }
+    .card h1 {
+      margin: 0;
+      font-size: 2rem;
+      color: #222;
+    }
+    .card h2 {
+      margin: 0.5rem 0;
+      font-size: 1.3rem;
+      color: #444;
+    }
+    .card p {
+      margin: 1rem 0 0;
+      font-size: 1.1rem;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="content">
+      <h1>Henry &amp; Margarita Aquende</h1>
+      <h2>25<sup>th</sup> Wedding Anniversary</h2>
+      <p><strong>Better luck next time!</strong></p>
+    </div>
+  </div>
+</body>
+</html>
